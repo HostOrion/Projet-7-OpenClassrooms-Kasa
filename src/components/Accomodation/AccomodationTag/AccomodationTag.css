@@ -1,0 +1,29 @@
+.accomodation_tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.accomodation_tag {
+    background-color: #ff6060;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    height: 25px;
+    min-width: 90px;
+    padding: 0 15px;
+}
+
+@media all and (max-width: 812px) {
+
+    .accomodation_tag {
+      font-size: 11px;
+    }
+}

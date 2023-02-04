@@ -1,0 +1,14 @@
+@import "./components/Header/header.css";
+@import "./components/Footer/footer.css";
+@import "./components/Card/card.css";
+@import "./components/Banner/banner.css";
+@import "./pages/About/about.css";
+@import "./pages/Accomodation/accomodation.css";
+@import "./pages/Error/error.css";
+@import "./pages/Home/home.css";
+@import "./components/Collapse/collapse.css";
+@import "./components/Slideshow/Slideshow.css";
+@import "./components/Accomodation/AccomodationHost/AccomodationHost.css";
+@import "./components/Accomodation/AccomodationRating/AccomodationRating.css";
+@import "./components/Accomodation/AccomodationTag/AccomodationTag.css";
+@import "./components/Accomodation/AccomodationTitle/AccomodationTitle.css";

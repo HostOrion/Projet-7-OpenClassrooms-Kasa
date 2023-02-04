@@ -1,0 +1,12 @@
+.accomodation_star {
+    width: 34px;
+    height: 25px;
+}
+
+@media all and (max-width: 812px) {
+
+.accomodation_star {
+        width: 18px;
+        height: 18px;
+    }
+}

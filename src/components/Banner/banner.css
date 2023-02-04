@@ -1,0 +1,41 @@
+.banner_home {
+    margin: 63px auto 0 auto;
+    width: 90%;
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: url(../../../public/assets/banner-homepage.png),
+        center/cover #00000050;
+    background-blend-mode: darken;
+    background-size: 100% 100%;
+}
+  
+.banner_home h2 {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 3.4vw;
+    line-height: 68px;
+    color: #ffff;
+}
+
+@media all and (max-width: 812px) {
+
+    .banner_home {
+      height: 111px;
+      width: 87%;
+      background-size: cover;
+      border-radius: 10px;
+      justify-content: flex-start;
+      background-position: center;
+    }
+
+    .banner_home h2 {
+      margin-left: 16px;
+      margin-right: 80px;
+      font-size: 24px;
+      line-height: normal;
+    }
+}

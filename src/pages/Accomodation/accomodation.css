@@ -1,0 +1,46 @@
+.Accomodation_body {
+    margin: 30px 50px;
+  }
+.Accomodation_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Accomodation_details {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown_Accomodation {
+  width: 45%;
+}
+.dropdown_Accomodation p {
+  font-size: 18px;
+}
+.dropdown_Accomodation li {
+  font-size: 18px;
+}
+
+@media all and (max-width: 812px) {
+
+  .Accomodation_details {
+    flex-direction: column;
+  }
+  .dropdown_Accomodation {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Accomodation_host {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .Accomodation_body {
+    margin: 30px 10px;
+  }
+  .Accomodation_wrapper {
+    flex-direction: column;
+  }
+}
