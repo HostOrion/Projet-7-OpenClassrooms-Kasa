@@ -17,16 +17,20 @@ function Slideshow(props) {
   }
   return (
     <section className="slideshow_container">
-      <div className="slideshow_navigation">
-        <ArrowLeft className="arrow" onClick={() => {prevSlide()}} />
-        <ArrowRight className="arrow" onClick={() => {nextSlide()}} />
-      </div>
+      {props.pictures.length !== 1 && (
+        <>
+          <div className="slideshow_navigation">
+            <ArrowLeft className="arrow" onClick={() => {prevSlide()}} />
+            <ArrowRight className="arrow" onClick={() => {nextSlide()}} />
+          </div>
+          <div className="slideshow_text">{currentSlide + 1}/{props.pictures.length}</div>
+        </>
+      )}
       {props.pictures.map((picture, index) => {
         return (
-          <img src={picture} alt="" key={index} className={index === currentSlide ? "slideshow_img" : "hide_img"} />
+          <img src={ picture} alt="" key={index} className={index === currentSlide ? "slideshow_img" : "hide_img"} />
         )
       })}
-      <div className="slideshow_text">{currentSlide + 1}/{props.pictures.length}</div>
     </section>
   )
 }

@@ -9,7 +9,7 @@ function accomodationRating(props) {
       {ratingNumber.map((el) => {
         return (
           <Star
-            fill={el <= props.ratings ? "#ff6060" : "#f7f7f7"}
+            fill={el <= props.ratings ? "#ff6060" : "#e3e3e3"}
             key={`star-${el}`}
             className="accomodation_star"
           ></Star>
